@@ -1,16 +1,17 @@
-package com.techzenacademy.management.dto;
+package com.techzenacademy.management.dto.student;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserRequest {
-    String name;
-    int age;
+public class StudentRequest {
+    String fullName;
+    String dob;
     String phone;
+    String email;
     String address;
 }

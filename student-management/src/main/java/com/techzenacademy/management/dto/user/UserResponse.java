@@ -1,4 +1,4 @@
-package com.techzenacademy.management.dto;
+package com.techzenacademy.management.dto.user;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -12,8 +12,7 @@ import java.util.UUID;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserResponse {
     UUID id;
-    String name;
-    int age;
-    String phone;
-    String address;
+    String username;
+    String email;
+    String status;
 }
